@@ -22,6 +22,8 @@ class AprConan(ConanFile):
     options = {"shared": [True, False], "fPIC": [True, False]}
     default_options = {"shared": False, "fPIC": True}
 
+    requires = ( "libuuid/1.0.3@bincrafters/stable", )
+
     _source_subfolder = "source_subfolder"
     _build_subfolder = "build_subfolder"
 
